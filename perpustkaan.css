@@ -1,0 +1,263 @@
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  background-image: url(image/background.jpg);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#333;
+  padding: 1rem 2rem;
+  flex-wrap: wrap;
+}
+
+nav .logo img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all;
+  transition-duration: 300ms;
+  font-weight: bolder;
+
+}
+
+nav ul li a:hover{
+  color: olivedrab;
+  border-bottom: 3px solid gray;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  color: antiquewhite;
+  background-image: url(image/library.jpg);
+  font-family:'Times New Roman', Times, serif;
+  font-size: 18px;
+}
+
+header img {
+  width: 100px;
+  border-radius: 50%;
+}
+
+header h1, h2, h3, h4 {
+  margin: 10px 0;
+}
+
+.main-container {
+  padding: 20px;
+}
+
+#beranda{
+  background-color: darkgrey;
+  border-radius: 20px;
+  width: 95%;
+  margin: auto;
+}
+
+#beranda h1{
+  color: darkolivegreen;
+  text-align: center;
+  margin-top: 80px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#beranda .beranda-deskripsi{
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.beranda-flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+  height: 400px;
+  width: 100%;
+}
+
+.beranda-image,
+.beranda-text{
+  margin: 14px;
+  padding-right: 25px;
+}
+
+.beranda-image img{
+  object-fit: cover;
+  height: 350px;
+  margin-left: 10px;
+  border: double 8px darkolivegreen;
+}
+
+.beranda-text{
+  width: 47,5%;
+  padding: 10px 0;
+  margin: 10px;
+  padding-left: 10px;
+  overflow: auto;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#profile{
+  background-color: darkgrey;
+  border-radius: 20px;
+  width: 95%;
+  margin: auto;
+}
+
+#profile h1{
+  color: darkolivegreen;
+  text-align: center;
+  margin-top: 80px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#profile .profile-deskripsi{
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.profile-flex{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 30px auto;
+  height: 400px;
+}
+.profile-image img{
+  width: 47,5%;
+  object-fit: cover;
+  height: 350px;
+  margin-left: 10px;
+  border: double 8px darkolivegreen;
+}
+
+.profile-image
+.profile-text{
+  margin: 14px;
+  padding-right: 25px;
+}
+
+.profile-text{
+  padding: 10px 0;
+  margin: 10px;
+  padding-left: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  overflow: auto;
+  width:47,5%;
+}
+
+
+footer {
+  background-color: #333;
+  color: white;
+  margin-top: 80px;
+  padding: 5px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+footer ul{
+  list-style: none;
+  padding: 0;
+}
+
+footer.img{
+  margin-top: 10px;
+}
+
+footer ul li{
+  margin: 7px 7px;
+}
+
+.footer-title{
+  font-size: 20px;
+  color: darkolivegreen;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white; 
+  font-size: 15px;
+}
+
+footer ul li a :hover{
+  color: antiquewhite;
+}
+
+.info{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-list_header{
+  font-size: 16px;
+  color:darkolivegreen;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 467px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .profile-flex, .beranda-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-image img, .beranda-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  header img {
+    width: 80px;
+  }
+
+  header h1, h2, h3, h4 {
+    font-size: 1rem;
+  }
+
+  footer .info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

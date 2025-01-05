@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan Digital</title>
+    <link rel="stylesheet" href="Koleksi_Buku.css">
+</head>
+<body>
+    <header>
+        <h1>📚 Perpustakaan Digital</h1>
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Cari buku..." onkeyup="searchBook()">
+            <button onclick="toggleAddBookForm()">➕ Tambah Buku</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="add-book-section" class="hidden">
+            <h2>Tambah Buku Baru</h2>
+            <form id="add-book-form" onsubmit="addBook(event)">
+                <input type="text" id="title" placeholder="Judul Buku" required>
+                <input type="text" id="author" placeholder="Penulis" required>
+                <input type="number" id="year" placeholder="Tahun Terbit" required>
+                <button type="submit">Tambah Buku</button>
+            </form>
+        </section>
+
+        <section>
+
+            <div id="koleksi_buku">
+                <h1>KOLEKSI BUKU</h1>
+                 <hr size="1px" color="black" width="100%">
+                <p>DAFTAR BUKU:</p>
+              <section class="book-collection">
+                <article class="book">
+                  <img src="image/judul_2.jpg" alt="">
+                  <h2>Web Hacking serangan dan pertahanannya</h2>
+                  <p>Penulis: Stuart Mc Clure </p>
+                  <p>2003</p>
+                </article>
+                  <article class="book">
+                    <img src="image/judul_4.jpg" alt="">
+                    <h2>Visual Basic</h2>
+                    <p>Penulis: Sto </p>
+                    <p>2007</p>
+                  </article>
+                    <article class="book">
+                      <img src="image/judul_5.jpg" alt="">
+                      <h2>Mastering Ajak dan PHP</h2>
+                      <p>Penulis: Abdul Kadir </p>
+                      <p>2009</p>
+                    </article>
+          
+                    <article class="book">
+                      <img src="image/judul_1.jpg" alt="">
+                      <h2>Grafis dan Chart Spektakuler Excel</h2>
+                      <p>Penulis: Christopher lee </p>
+                      <p>2012</p>
+                    </article>
+          
+                    <article class="book">
+                      <img src="image/judul_6.jpg" alt="">
+                      <h2>Kupa Tuntas Correl Draw X6</h2>
+                      <p>Penulis: Madcows </p>
+                      <p>2014</p>
+                    </article>
+          
+                    <article class="book">
+                      <img src="image/judul_7.jpg" alt="">
+                      <h2>Ubuntu From Zero & CD</h2>
+                      <p>Penulis: sto </p>
+                      <p>2011</p>
+                    </article>
+          
+                    <article class="book">
+                      <img src="image/judul_8.jpg" alt="">
+                      <h2>Membuat Mini Games seru dengan Flas</h2>
+                      <p>Penulis: A Zainul Fanani </p>
+                      <p>2010</p>
+                    </article>
+
+                    <article class="book">
+                      <img src="image/judul_9.jpg" alt="">
+                      <h2>Killer WordPress</h2>
+                      <p>Penulis: Su Rahman </p>
+                      <p>2013</p>
+                    </article>
+          
+                    </article>
+              </section>
+    
+        </section>
+    </main>
+
+    <footer>
+        <p>Perpustakaan Digital &copy; 2024.</p>
+    </footer>
+
+    <script src="Koleksi_Buku.js"></script>
+</body>
+</html>
